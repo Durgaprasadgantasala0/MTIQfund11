@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]">
+  <test thread-count="5" name="Test(failed)(failed)">
+    <classes>
+      <class name="TestCases.EPPPartialPaymentTest">
+        <methods>
+          <include name="authorzation"/>
+          <include name="tearDown"/>
+          <include name="performAdvanceSearch"/>
+          <include name="ActionsBtn"/>
+          <include name="LoanLink"/>
+          <include name="log_in"/>
+          <include name="storeLogin"/>
+          <include name="paymentplan"/>
+        </methods>
+      </class> <!-- TestCases.EPPPartialPaymentTest -->
+      <class name="TestCases.DefaultpaymentTest">
+        <methods>
+          <include name="ActionsBtn"/>
+          <include name="authorzation"/>
+          <include name="tearDown"/>
+          <include name="storeLogin"/>
+          <include name="performAdvanceSearch"/>
+          <include name="LoanLink"/>
+          <include name="defpayemt"/>
+          <include name="log_in"/>
+        </methods>
+      </class> <!-- TestCases.DefaultpaymentTest -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

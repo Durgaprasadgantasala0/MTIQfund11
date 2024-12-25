@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="TestCases.EPPPartialPaymentTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="performAdvanceSearch"/>
+          <include name="ActionsBtn"/>
+          <include name="LoanLink"/>
+          <include name="log_in"/>
+          <include name="storeLogin"/>
+          <include name="paymentplan"/>
+          <include name="authorization"/>
+        </methods>
+      </class> <!-- TestCases.EPPPartialPaymentTest -->
+      <class name="TestCases.EPPFullPaymentTest">
+        <methods>
+          <include name="storeLogin"/>
+          <include name="performAdvanceSearch"/>
+          <include name="tearDown"/>
+          <include name="LoanLink"/>
+          <include name="log_in"/>
+          <include name="paymentplan"/>
+          <include name="authorization"/>
+        </methods>
+      </class> <!-- TestCases.EPPFullPaymentTest -->
+      <class name="TestCases.DefaultPartialpaymentTest">
+        <methods>
+          <include name="storeLogin"/>
+          <include name="tearDown"/>
+          <include name="performAdvanceSearch"/>
+          <include name="ActionsBtn"/>
+          <include name="LoanLink"/>
+          <include name="defpayemt"/>
+          <include name="log_in"/>
+          <include name="authorization"/>
+        </methods>
+      </class> <!-- TestCases.DefaultPartialpaymentTest -->
+      <class name="TestCases.DefaultFullpaymentTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="defpayemt"/>
+          <include name="LoanLink"/>
+          <include name="authorization"/>
+          <include name="storeLogin"/>
+          <include name="log_in"/>
+          <include name="performAdvanceSearch"/>
+        </methods>
+      </class> <!-- TestCases.DefaultFullpaymentTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

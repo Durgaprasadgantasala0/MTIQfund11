@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <listeners>
+    <listener class-name="Utilities.ExtentReportManager"/>
+  </listeners>
+  <test name="Test">
+    <classes>
+    
+       <!--  <class name="TestCases.EppTest"/>
+           <class name="TestCases.VoidEppTest"/>
+       -->
+    
+   
+     
+        
+      <class name="TestCases.BuyBackPaymentTest"/>
+       <class name="TestCases.VoidBuybackTest"/>
+       
+        <class name="TestCases.DefaultPartialpaymentTest"/>
+         <class name="TestCases.VoidDefaultPartialpaymentTest"/>
+         
+       <class name="TestCases.DefaultFullpaymentTest"/>
+      <class name="TestCases.VoidDefaultFullpaymentTest"/>
+      
+      <class name="TestCases.EPPPartialPaymentTest"/>
+       <class name="TestCases.VoidPartialEppPaymentTest"/>
+      
+      <class name="TestCases.EPPFullPaymentTest"/>
+      <class name="TestCases.VoidFullEppPaymentTest"/>
+      
+  
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

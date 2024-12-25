@@ -1,0 +1,8 @@
+
+appurl https://aeaqxlocal.qfund.net/cc/index.do
+stageurl  https://qfundxstaging.qfund.net/cc/trainingIndex.do
+stageadminurl  https://qfundxstaging.qfund.net/cc/adminIndex.do
+uiux  https://192.168.2.190/cc/trainingIndex.do
+autoappurl https://aeaqxsecuritytest.qfund.net/cc/autoIndex.do
+appur3 https://192.168.2.190/cc/index.do
+produrl https://qfundxprodsupport.qfund.net/cc/trainingIndex.do

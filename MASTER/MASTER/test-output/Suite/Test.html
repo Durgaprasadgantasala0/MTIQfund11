@@ -1,0 +1,583 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>56/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 24 23:48:53 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>602 seconds (602761 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.DefaultPartialpaymentTest.authorization()'><b>authorization</b><br>Test class: TestCases.DefaultPartialpaymentTest</td>
+<td><div><pre>java.lang.AssertionError: Test failed due to an exception: stale element reference: element is not attached to the page document
+  (Session info: chrome=131.0.6778.205)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;QTLSYS2-47-PC&apos;, ip: &apos;10.7.7.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212-3-redhat&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\DURGAP~1.G\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59307}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 131.0.6778.205, webStorageEnabled: true}
+Session ID: 42dbf23f8bd0d35d9f78d33c104d5799
+	at TestCases.DefaultPartialpaymentTest.authorization(DefaultPartialpaymentTest.java:201)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace623131585", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace623131585'><pre>java.lang.AssertionError: Test failed due to an exception: stale element reference: element is not attached to the page document
+  (Session info: chrome=131.0.6778.205)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;QTLSYS2-47-PC&apos;, ip: &apos;10.7.7.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212-3-redhat&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\DURGAP~1.G\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59307}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 131.0.6778.205, webStorageEnabled: true}
+Session ID: 42dbf23f8bd0d35d9f78d33c104d5799
+	at org.testng.Assert.fail(Assert.java:96)
+	at TestCases.DefaultPartialpaymentTest.authorization(DefaultPartialpaymentTest.java:201)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>7</td>
+<td>TestCases.DefaultPartialpaymentTest@71318ec4</td></tr>
+<tr>
+<td title='TestCases.DefaultFullpaymentTest.authorization()'><b>authorization</b><br>Test class: TestCases.DefaultFullpaymentTest</td>
+<td><div><pre>java.lang.AssertionError: Test failed due to an exception: stale element reference: element is not attached to the page document
+  (Session info: chrome=131.0.6778.205)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;QTLSYS2-47-PC&apos;, ip: &apos;10.7.7.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212-3-redhat&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\DURGAP~1.G\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59511}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 131.0.6778.205, webStorageEnabled: true}
+Session ID: 506476793758cf0fe0697d99bc844ff7
+	at TestCases.DefaultFullpaymentTest.authorization(DefaultFullpaymentTest.java:195)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2124261761", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2124261761'><pre>java.lang.AssertionError: Test failed due to an exception: stale element reference: element is not attached to the page document
+  (Session info: chrome=131.0.6778.205)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;QTLSYS2-47-PC&apos;, ip: &apos;10.7.7.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212-3-redhat&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\DURGAP~1.G\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59511}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 131.0.6778.205, webStorageEnabled: true}
+Session ID: 506476793758cf0fe0697d99bc844ff7
+	at org.testng.Assert.fail(Assert.java:96)
+	at TestCases.DefaultFullpaymentTest.authorization(DefaultFullpaymentTest.java:195)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>9</td>
+<td>TestCases.DefaultFullpaymentTest@a67c67e</td></tr>
+<tr>
+<td title='TestCases.EPPPartialPaymentTest.authorization()'><b>authorization</b><br>Test class: TestCases.EPPPartialPaymentTest</td>
+<td><div><pre>java.lang.AssertionError: Test failed in method authorization due to an exception: stale element reference: element is not attached to the page document
+  (Session info: chrome=131.0.6778.205)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;QTLSYS2-47-PC&apos;, ip: &apos;10.7.7.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212-3-redhat&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\DURGAP~1.G\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59647}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 131.0.6778.205, webStorageEnabled: true}
+Session ID: 27b6b26181b171aeaffe70838922188f
+	at TestCases.EPPPartialPaymentTest.authorization(EPPPartialPaymentTest.java:194)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace555943503", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace555943503'><pre>java.lang.AssertionError: Test failed in method authorization due to an exception: stale element reference: element is not attached to the page document
+  (Session info: chrome=131.0.6778.205)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;QTLSYS2-47-PC&apos;, ip: &apos;10.7.7.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212-3-redhat&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\DURGAP~1.G\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59647}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 131.0.6778.205, webStorageEnabled: true}
+Session ID: 27b6b26181b171aeaffe70838922188f
+	at org.testng.Assert.fail(Assert.java:96)
+	at TestCases.EPPPartialPaymentTest.authorization(EPPPartialPaymentTest.java:194)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>7</td>
+<td>TestCases.EPPPartialPaymentTest@4e1d422d</td></tr>
+<tr>
+<td title='TestCases.EPPFullPaymentTest.authorization()'><b>authorization</b><br>Test class: TestCases.EPPFullPaymentTest</td>
+<td><div><pre>java.lang.AssertionError: Test failed due to an exception in authorization method: stale element reference: element is not attached to the page document
+  (Session info: chrome=131.0.6778.205)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;QTLSYS2-47-PC&apos;, ip: &apos;10.7.7.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212-3-redhat&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\DURGAP~1.G\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59786}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 131.0.6778.205, webStorageEnabled: true}
+Session ID: e9e8dd0c3adac1785075279e37869705
+	at TestCases.EPPFullPaymentTest.authorization(EPPFullPaymentTest.java:211)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace213095762", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace213095762'><pre>java.lang.AssertionError: Test failed due to an exception in authorization method: stale element reference: element is not attached to the page document
+  (Session info: chrome=131.0.6778.205)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;QTLSYS2-47-PC&apos;, ip: &apos;10.7.7.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212-3-redhat&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\DURGAP~1.G\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59786}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 131.0.6778.205, webStorageEnabled: true}
+Session ID: e9e8dd0c3adac1785075279e37869705
+	at org.testng.Assert.fail(Assert.java:96)
+	at TestCases.EPPFullPaymentTest.authorization(EPPFullPaymentTest.java:211)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>7</td>
+<td>TestCases.EPPFullPaymentTest@52a86356</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.BuyBackPaymentTest.ActionsBtn()'><b>ActionsBtn</b><br>Test class: TestCases.BuyBackPaymentTest</td>
+<td></td>
+<td>22</td>
+<td>TestCases.BuyBackPaymentTest@544fe44c</td></tr>
+<tr>
+<td title='TestCases.VoidBuybackTest.ActionsBtn()'><b>ActionsBtn</b><br>Test class: TestCases.VoidBuybackTest</td>
+<td></td>
+<td>12</td>
+<td>TestCases.VoidBuybackTest@31610302</td></tr>
+<tr>
+<td title='TestCases.DefaultPartialpaymentTest.ActionsBtn()'><b>ActionsBtn</b><br>Test class: TestCases.DefaultPartialpaymentTest</td>
+<td></td>
+<td>5</td>
+<td>TestCases.DefaultPartialpaymentTest@71318ec4</td></tr>
+<tr>
+<td title='TestCases.VoidDefaultPartialpaymentTest.ActionsBtn()'><b>ActionsBtn</b><br>Test class: TestCases.VoidDefaultPartialpaymentTest</td>
+<td></td>
+<td>5</td>
+<td>TestCases.VoidDefaultPartialpaymentTest@21213b92</td></tr>
+<tr>
+<td title='TestCases.DefaultFullpaymentTest.ActionsBtn()'><b>ActionsBtn</b><br>Test class: TestCases.DefaultFullpaymentTest</td>
+<td></td>
+<td>5</td>
+<td>TestCases.DefaultFullpaymentTest@a67c67e</td></tr>
+<tr>
+<td title='TestCases.VoidDefaultFullpaymentTest.ActionsBtn()'><b>ActionsBtn</b><br>Test class: TestCases.VoidDefaultFullpaymentTest</td>
+<td></td>
+<td>5</td>
+<td>TestCases.VoidDefaultFullpaymentTest@3327bd23</td></tr>
+<tr>
+<td title='TestCases.EPPPartialPaymentTest.ActionsBtn()'><b>ActionsBtn</b><br>Test class: TestCases.EPPPartialPaymentTest</td>
+<td></td>
+<td>11</td>
+<td>TestCases.EPPPartialPaymentTest@4e1d422d</td></tr>
+<tr>
+<td title='TestCases.VoidPartialEppPaymentTest.ActionsBtn()'><b>ActionsBtn</b><br>Test class: TestCases.VoidPartialEppPaymentTest</td>
+<td></td>
+<td>11</td>
+<td>TestCases.VoidPartialEppPaymentTest@66480dd7</td></tr>
+<tr>
+<td title='TestCases.EPPFullPaymentTest.ActionsBtn()'><b>ActionsBtn</b><br>Test class: TestCases.EPPFullPaymentTest</td>
+<td></td>
+<td>11</td>
+<td>TestCases.EPPFullPaymentTest@52a86356</td></tr>
+<tr>
+<td title='TestCases.VoidFullEppPaymentTest.ActionsBtn()'><b>ActionsBtn</b><br>Test class: TestCases.VoidFullEppPaymentTest</td>
+<td></td>
+<td>11</td>
+<td>TestCases.VoidFullEppPaymentTest@5ce81285</td></tr>
+<tr>
+<td title='TestCases.BuyBackPaymentTest.LoanLink()'><b>LoanLink</b><br>Test class: TestCases.BuyBackPaymentTest</td>
+<td></td>
+<td>10</td>
+<td>TestCases.BuyBackPaymentTest@544fe44c</td></tr>
+<tr>
+<td title='TestCases.VoidBuybackTest.LoanLink()'><b>LoanLink</b><br>Test class: TestCases.VoidBuybackTest</td>
+<td></td>
+<td>5</td>
+<td>TestCases.VoidBuybackTest@31610302</td></tr>
+<tr>
+<td title='TestCases.DefaultPartialpaymentTest.LoanLink()'><b>LoanLink</b><br>Test class: TestCases.DefaultPartialpaymentTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.DefaultPartialpaymentTest@71318ec4</td></tr>
+<tr>
+<td title='TestCases.VoidDefaultPartialpaymentTest.LoanLink()'><b>LoanLink</b><br>Test class: TestCases.VoidDefaultPartialpaymentTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.VoidDefaultPartialpaymentTest@21213b92</td></tr>
+<tr>
+<td title='TestCases.DefaultFullpaymentTest.LoanLink()'><b>LoanLink</b><br>Test class: TestCases.DefaultFullpaymentTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.DefaultFullpaymentTest@a67c67e</td></tr>
+<tr>
+<td title='TestCases.VoidDefaultFullpaymentTest.LoanLink()'><b>LoanLink</b><br>Test class: TestCases.VoidDefaultFullpaymentTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.VoidDefaultFullpaymentTest@3327bd23</td></tr>
+<tr>
+<td title='TestCases.EPPPartialPaymentTest.LoanLink()'><b>LoanLink</b><br>Test class: TestCases.EPPPartialPaymentTest</td>
+<td></td>
+<td>4</td>
+<td>TestCases.EPPPartialPaymentTest@4e1d422d</td></tr>
+<tr>
+<td title='TestCases.VoidPartialEppPaymentTest.LoanLink()'><b>LoanLink</b><br>Test class: TestCases.VoidPartialEppPaymentTest</td>
+<td></td>
+<td>4</td>
+<td>TestCases.VoidPartialEppPaymentTest@66480dd7</td></tr>
+<tr>
+<td title='TestCases.EPPFullPaymentTest.LoanLink()'><b>LoanLink</b><br>Test class: TestCases.EPPFullPaymentTest</td>
+<td></td>
+<td>4</td>
+<td>TestCases.EPPFullPaymentTest@52a86356</td></tr>
+<tr>
+<td title='TestCases.VoidFullEppPaymentTest.LoanLink()'><b>LoanLink</b><br>Test class: TestCases.VoidFullEppPaymentTest</td>
+<td></td>
+<td>4</td>
+<td>TestCases.VoidFullEppPaymentTest@5ce81285</td></tr>
+<tr>
+<td title='TestCases.BuyBackPaymentTest.authorization()'><b>authorization</b><br>Test class: TestCases.BuyBackPaymentTest</td>
+<td></td>
+<td>15</td>
+<td>TestCases.BuyBackPaymentTest@544fe44c</td></tr>
+<tr>
+<td title='TestCases.VoidBuybackTest.authorization()'><b>authorization</b><br>Test class: TestCases.VoidBuybackTest</td>
+<td></td>
+<td>9</td>
+<td>TestCases.VoidBuybackTest@31610302</td></tr>
+<tr>
+<td title='TestCases.VoidDefaultPartialpaymentTest.authorization()'><b>authorization</b><br>Test class: TestCases.VoidDefaultPartialpaymentTest</td>
+<td></td>
+<td>6</td>
+<td>TestCases.VoidDefaultPartialpaymentTest@21213b92</td></tr>
+<tr>
+<td title='TestCases.VoidDefaultFullpaymentTest.authorization()'><b>authorization</b><br>Test class: TestCases.VoidDefaultFullpaymentTest</td>
+<td></td>
+<td>7</td>
+<td>TestCases.VoidDefaultFullpaymentTest@3327bd23</td></tr>
+<tr>
+<td title='TestCases.VoidPartialEppPaymentTest.authorization()'><b>authorization</b><br>Test class: TestCases.VoidPartialEppPaymentTest</td>
+<td></td>
+<td>7</td>
+<td>TestCases.VoidPartialEppPaymentTest@66480dd7</td></tr>
+<tr>
+<td title='TestCases.VoidFullEppPaymentTest.authorization()'><b>authorization</b><br>Test class: TestCases.VoidFullEppPaymentTest</td>
+<td></td>
+<td>6</td>
+<td>TestCases.VoidFullEppPaymentTest@5ce81285</td></tr>
+<tr>
+<td title='TestCases.BuyBackPaymentTest.buypayemt()'><b>buypayemt</b><br>Test class: TestCases.BuyBackPaymentTest</td>
+<td></td>
+<td>14</td>
+<td>TestCases.BuyBackPaymentTest@544fe44c</td></tr>
+<tr>
+<td title='TestCases.DefaultPartialpaymentTest.defpayemt()'><b>defpayemt</b><br>Test class: TestCases.DefaultPartialpaymentTest</td>
+<td></td>
+<td>9</td>
+<td>TestCases.DefaultPartialpaymentTest@71318ec4</td></tr>
+<tr>
+<td title='TestCases.DefaultFullpaymentTest.defpayemt()'><b>defpayemt</b><br>Test class: TestCases.DefaultFullpaymentTest</td>
+<td></td>
+<td>9</td>
+<td>TestCases.DefaultFullpaymentTest@a67c67e</td></tr>
+<tr>
+<td title='TestCases.EPPPartialPaymentTest.paymentplan()'><b>paymentplan</b><br>Test class: TestCases.EPPPartialPaymentTest</td>
+<td></td>
+<td>9</td>
+<td>TestCases.EPPPartialPaymentTest@4e1d422d</td></tr>
+<tr>
+<td title='TestCases.EPPFullPaymentTest.paymentplan()'><b>paymentplan</b><br>Test class: TestCases.EPPFullPaymentTest</td>
+<td></td>
+<td>9</td>
+<td>TestCases.EPPFullPaymentTest@52a86356</td></tr>
+<tr>
+<td title='TestCases.BuyBackPaymentTest.performAdvanceSearch()'><b>performAdvanceSearch</b><br>Test class: TestCases.BuyBackPaymentTest</td>
+<td></td>
+<td>17</td>
+<td>TestCases.BuyBackPaymentTest@544fe44c</td></tr>
+<tr>
+<td title='TestCases.VoidBuybackTest.performAdvanceSearch()'><b>performAdvanceSearch</b><br>Test class: TestCases.VoidBuybackTest</td>
+<td></td>
+<td>6</td>
+<td>TestCases.VoidBuybackTest@31610302</td></tr>
+<tr>
+<td title='TestCases.DefaultPartialpaymentTest.performAdvanceSearch()'><b>performAdvanceSearch</b><br>Test class: TestCases.DefaultPartialpaymentTest</td>
+<td></td>
+<td>7</td>
+<td>TestCases.DefaultPartialpaymentTest@71318ec4</td></tr>
+<tr>
+<td title='TestCases.VoidDefaultPartialpaymentTest.performAdvanceSearch()'><b>performAdvanceSearch</b><br>Test class: TestCases.VoidDefaultPartialpaymentTest</td>
+<td></td>
+<td>6</td>
+<td>TestCases.VoidDefaultPartialpaymentTest@21213b92</td></tr>
+<tr>
+<td title='TestCases.DefaultFullpaymentTest.performAdvanceSearch()'><b>performAdvanceSearch</b><br>Test class: TestCases.DefaultFullpaymentTest</td>
+<td></td>
+<td>6</td>
+<td>TestCases.DefaultFullpaymentTest@a67c67e</td></tr>
+<tr>
+<td title='TestCases.VoidDefaultFullpaymentTest.performAdvanceSearch()'><b>performAdvanceSearch</b><br>Test class: TestCases.VoidDefaultFullpaymentTest</td>
+<td></td>
+<td>6</td>
+<td>TestCases.VoidDefaultFullpaymentTest@3327bd23</td></tr>
+<tr>
+<td title='TestCases.EPPPartialPaymentTest.performAdvanceSearch()'><b>performAdvanceSearch</b><br>Test class: TestCases.EPPPartialPaymentTest</td>
+<td></td>
+<td>6</td>
+<td>TestCases.EPPPartialPaymentTest@4e1d422d</td></tr>
+<tr>
+<td title='TestCases.VoidPartialEppPaymentTest.performAdvanceSearch()'><b>performAdvanceSearch</b><br>Test class: TestCases.VoidPartialEppPaymentTest</td>
+<td></td>
+<td>6</td>
+<td>TestCases.VoidPartialEppPaymentTest@66480dd7</td></tr>
+<tr>
+<td title='TestCases.EPPFullPaymentTest.performAdvanceSearch()'><b>performAdvanceSearch</b><br>Test class: TestCases.EPPFullPaymentTest</td>
+<td></td>
+<td>6</td>
+<td>TestCases.EPPFullPaymentTest@52a86356</td></tr>
+<tr>
+<td title='TestCases.VoidFullEppPaymentTest.performAdvanceSearch()'><b>performAdvanceSearch</b><br>Test class: TestCases.VoidFullEppPaymentTest</td>
+<td></td>
+<td>7</td>
+<td>TestCases.VoidFullEppPaymentTest@5ce81285</td></tr>
+<tr>
+<td title='TestCases.BuyBackPaymentTest.storeLogin()'><b>storeLogin</b><br>Test class: TestCases.BuyBackPaymentTest</td>
+<td></td>
+<td>7</td>
+<td>TestCases.BuyBackPaymentTest@544fe44c</td></tr>
+<tr>
+<td title='TestCases.VoidBuybackTest.storeLogin()'><b>storeLogin</b><br>Test class: TestCases.VoidBuybackTest</td>
+<td></td>
+<td>2</td>
+<td>TestCases.VoidBuybackTest@31610302</td></tr>
+<tr>
+<td title='TestCases.DefaultPartialpaymentTest.storeLogin()'><b>storeLogin</b><br>Test class: TestCases.DefaultPartialpaymentTest</td>
+<td></td>
+<td>2</td>
+<td>TestCases.DefaultPartialpaymentTest@71318ec4</td></tr>
+<tr>
+<td title='TestCases.VoidDefaultPartialpaymentTest.storeLogin()'><b>storeLogin</b><br>Test class: TestCases.VoidDefaultPartialpaymentTest</td>
+<td></td>
+<td>2</td>
+<td>TestCases.VoidDefaultPartialpaymentTest@21213b92</td></tr>
+<tr>
+<td title='TestCases.DefaultFullpaymentTest.storeLogin()'><b>storeLogin</b><br>Test class: TestCases.DefaultFullpaymentTest</td>
+<td></td>
+<td>2</td>
+<td>TestCases.DefaultFullpaymentTest@a67c67e</td></tr>
+<tr>
+<td title='TestCases.VoidDefaultFullpaymentTest.storeLogin()'><b>storeLogin</b><br>Test class: TestCases.VoidDefaultFullpaymentTest</td>
+<td></td>
+<td>2</td>
+<td>TestCases.VoidDefaultFullpaymentTest@3327bd23</td></tr>
+<tr>
+<td title='TestCases.EPPPartialPaymentTest.storeLogin()'><b>storeLogin</b><br>Test class: TestCases.EPPPartialPaymentTest</td>
+<td></td>
+<td>2</td>
+<td>TestCases.EPPPartialPaymentTest@4e1d422d</td></tr>
+<tr>
+<td title='TestCases.VoidPartialEppPaymentTest.storeLogin()'><b>storeLogin</b><br>Test class: TestCases.VoidPartialEppPaymentTest</td>
+<td></td>
+<td>2</td>
+<td>TestCases.VoidPartialEppPaymentTest@66480dd7</td></tr>
+<tr>
+<td title='TestCases.EPPFullPaymentTest.storeLogin()'><b>storeLogin</b><br>Test class: TestCases.EPPFullPaymentTest</td>
+<td></td>
+<td>2</td>
+<td>TestCases.EPPFullPaymentTest@52a86356</td></tr>
+<tr>
+<td title='TestCases.VoidFullEppPaymentTest.storeLogin()'><b>storeLogin</b><br>Test class: TestCases.VoidFullEppPaymentTest</td>
+<td></td>
+<td>2</td>
+<td>TestCases.VoidFullEppPaymentTest@5ce81285</td></tr>
+<tr>
+<td title='TestCases.VoidPartialEppPaymentTest.voidEpp()'><b>voidEpp</b><br>Test class: TestCases.VoidPartialEppPaymentTest</td>
+<td></td>
+<td>12</td>
+<td>TestCases.VoidPartialEppPaymentTest@66480dd7</td></tr>
+<tr>
+<td title='TestCases.VoidFullEppPaymentTest.voidEpp()'><b>voidEpp</b><br>Test class: TestCases.VoidFullEppPaymentTest</td>
+<td></td>
+<td>12</td>
+<td>TestCases.VoidFullEppPaymentTest@5ce81285</td></tr>
+<tr>
+<td title='TestCases.VoidBuybackTest.voiddef()'><b>voiddef</b><br>Test class: TestCases.VoidBuybackTest</td>
+<td></td>
+<td>12</td>
+<td>TestCases.VoidBuybackTest@31610302</td></tr>
+<tr>
+<td title='TestCases.VoidDefaultPartialpaymentTest.voiddef()'><b>voiddef</b><br>Test class: TestCases.VoidDefaultPartialpaymentTest</td>
+<td></td>
+<td>12</td>
+<td>TestCases.VoidDefaultPartialpaymentTest@21213b92</td></tr>
+<tr>
+<td title='TestCases.VoidDefaultFullpaymentTest.voiddef()'><b>voiddef</b><br>Test class: TestCases.VoidDefaultFullpaymentTest</td>
+<td></td>
+<td>12</td>
+<td>TestCases.VoidDefaultFullpaymentTest@3327bd23</td></tr>
+</table><p>
+</body>
+</html>
